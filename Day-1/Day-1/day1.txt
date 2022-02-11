@@ -1,0 +1,39 @@
+1. Algorithm to find area of triangle
+
+   step 1 : Take input sides as a,b and c
+   step 2 : calculate semi-perimeter s = (a+b+c)/2
+   step 3 : calculate s*(s-a)*(s-b)*(s-c) and store in temp variable
+   step 4 : now area = sqrt(temp)
+   step 5 : print area
+
+3. Psuedo code for basic arithmetic operations
+   
+   	define int var X,Y
+	input integers X and Y
+   	print (X+Y)
+	print (X-Y)
+	print (X*Y)
+	print (X/Y)
+	end 
+
+4. Algorithm to calculate simple interest
+  
+   step 1 : take input Principle amount (p), interest rate (r) and time duration (t)
+   step 2 : calculate si = (p*r*t)/100
+   step 3 : print si
+
+5. Algorithm to find largest of three numbers X,Y,Z
+
+   	step 1 : take input X,Y and Z
+	step 2 : check if X > Y 
+	step 3 : if true then check if X > Z
+	step 4 : if step 3 is true then X is greater else Z is greater
+	step 5 : if step 3 false then check if Y > Z
+	step 6 : if step 5 is true then Y is greater else Z is greater
+
+6. Algorithm for prime number 
+   
+	step 1 : input a number
+	step 2 : start loop from i=2 to sqrt (number)
+	step 3 : If ( number%i == 0 ) return false // number not prime 
+	step 4 : else  return true // number is prime 

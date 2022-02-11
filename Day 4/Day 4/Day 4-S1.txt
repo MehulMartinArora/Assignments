@@ -1,0 +1,69 @@
+class ascii {
+    public static int asciiValue(char a) {
+        return a;
+    }
+}
+
+class first {
+
+    static int defint;
+    static char defchar;
+    static float deffloat;
+    static boolean defbol;
+
+    public static void main(String args[]) {
+
+        // Session 1
+
+        // Ques 1
+        System.out.println("Hello World");
+
+        // Ques 2
+        System.out.println(5 + 6);
+        System.out.println(0b0001 + 0b0101);
+        System.out.println('2' + 'P');
+
+        // Ques 3
+        System.out.println(Math.pow(5, 2));
+        int a = 5, b = 6;
+        a = a + b; // 4 + 2
+        b = a - b; // 6 - 2
+        a = a - b; // 6 - 4
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
+
+        // Ques 4
+        int len = 4, bred = 5;
+        System.out.println("Area of rentangle = " + (len * bred));
+
+        float radius = 10;
+        System.out.println("Area of circle = " + (3.14 * radius * radius) + " Circum = " + (2 * 3.14 * radius));
+
+        System.out.println("Ascii value using different class = " + ascii.asciiValue('a'));
+
+        // Ques 5
+        System.out.println("def val of int " + defint);
+        System.out.println("def val of char " + defchar);
+        System.out.println("def val of float " + deffloat);
+        System.out.println("def val of boolean " + defbol);
+
+        // Ques 6
+        int n1 = 0, n2 = 1, n = 4, sum = 0;
+        if (n == 1) {
+            System.out.println(n1);
+        } else if (n == 2) {
+            System.out.println(n1 + " " + n2);
+        } else {
+            n = n - 2;
+            System.out.print(n1 + " " + n2 + " ");
+            for (int i = 1; i <= n; i++) {
+                sum = n1 + n2;
+                n1 = n2;
+                n2 = sum;
+                System.out.print(sum + " ");
+            }
+        }
+
+    }
+
+}
