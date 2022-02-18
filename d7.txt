@@ -1,0 +1,75 @@
+// Question 1
+package pack1;
+
+public class ProtectedClass {
+	protected void show() {
+		System.out.println("protected");
+	}
+
+}
+
+package mypack;
+import pack1.*;
+class ProtectedAccess extends ProtectedClass { 
+	public static void main(String[] args) {
+		ProtectedAccess obj=new ProtectedAccess();
+		obj.show();
+	}
+}
+
+//Question 2
+
+abstract class Tea {
+	abstract void addIngredient();
+	void addMilk() {
+		System.out.println("add milk method");
+	}
+}
+class Coffee extends Tea {
+	//abstract void addIngredient();
+	void addIngredient() {
+		System.out.println("add milk method");
+	}
+}
+public class Beverages  {
+
+	public static void main(String[] args) {
+		Coffee coffeeObject=new Coffee();
+		coffeeObject.addMilk();
+		coffeeObject.addIngredient();
+		
+
+	}
+
+}
+
+// Question 3
+
+class Employee{
+  int empId;
+  String name;
+    Employee(int empid, String str){
+     empId = empid;
+     name = str;
+  }
+public void showData(){
+   System.out.print("EmpId = "+empId + "  " + " Employee Name = "+name);
+   System.out.println();
+ }
+}
+
+class ATCS{
+   public static void main(String args[]){
+       
+    Employee[] obj = new Employee[2] ;
+ 
+     obj[0] = new Employee(1,"Satya");
+     obj[1] = new Employee(2,"Satya2");
+ 
+     
+     System.out.println("Employee Object 1:");
+     obj[0].showData();
+     System.out.println("Employee Object 2:");
+     obj[1].showData();
+  }
+}

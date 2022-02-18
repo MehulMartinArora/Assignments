@@ -1,0 +1,175 @@
+// Question 1
+
+class ATCS {
+    static int Int;
+    static float Float;
+    static boolean Bool;
+    static long Long;
+    static byte Byte;
+    static short Short;
+    static double Double;
+    int varInt;
+    float varFloat;
+    boolean varBool;
+    long varLong;
+    byte varByte;
+    short varShort;
+    double varDouble;
+    public static void main(String[] args) {
+
+        
+
+       ATCS Default = new ATCS();
+    
+
+        System.out.println("Default values for instance variables");
+        System.out.println("val2:" +Default.varInt);
+        System.out.println("val2:" +Default.varFloat);
+        System.out.println("val2:" +Default.varBool);
+        System.out.println("val2:" +Default.varLong);
+        System.out.println("val2:" +Default.varByte);
+        System.out.println("val2:" +Default.varShort);
+        System.out.println("val2:" +Default.varDouble);
+        System.out.println("Default values for static variables");
+        System.out.println(Int);
+        System.out.println(Float);
+        System.out.println(Bool);
+        System.out.println(Long);
+        System.out.println(Byte);
+        System.out.println(Short);
+        System.out.println(Double);
+    }
+}
+
+// Question 2
+
+import java.util.Scanner;
+ 
+public class Employee {
+ 
+ int empid;
+ String name;
+ float salary;
+ 
+ public void getInput() {
+ 
+  Scanner in = new Scanner(System.in);
+  System.out.print("Enter the empid :: ");
+  empid = in.nextInt();
+  System.out.print("Enter the name :: ");
+  name = in.next();
+  System.out.print("Enter the salary :: ");
+  salary = in.nextFloat();
+ }
+ 
+ public void display() {
+  
+  System.out.println("Employee id = " + empid);
+  System.out.println("Employee name = " + name);
+  System.out.println("Employee salary = " + salary);
+ }
+ 
+ public static void main(String[] args) {
+ 
+  Employee e[] = new Employee[5];
+  
+  for(int i=0; i<5; i++) {
+   
+   e[i] = new Employee();
+   e[i].getInput();
+  }
+  
+  System.out.println("----- Data Entered -----");
+  
+  for(int i=0; i<5; i++) {
+   
+   e[i].display();
+  }
+ }
+}
+
+// Question 3
+class Animal {
+	void sameMethod() {
+		System.out.println("animal is parent class");
+	}
+
+}
+class dog extends Animal {
+	void sameMethod() {
+		System.out.println("dog is child class");
+	}
+	public static void main(String[] args) {
+		dog dogObject = new dog();
+		dogObject.sameMethod();
+	}
+}
+
+// Question 4
+
+package circle1;
+
+class Circle
+{
+    public double radius;
+    
+    public double area()
+    {
+        return Math.PI * radius *radius;
+    }
+    
+    public double perimeter()
+    {
+        return 2*Math.PI*radius;
+    }
+    public double circumference()
+    {
+        return perimeter();
+    }
+}
+
+class Cylinder extends Circle
+{
+    public double height;
+    
+    public double volume()
+    {
+        return area()*height;
+    }
+    
+}
+
+public class Circle1 
+{
+
+       public static void main(String[] args) 
+       {
+           Cylinder c=new Cylinder();
+          
+           c.radius=7;
+           c.height=10;
+           
+           System.out.println("Volume "+c.volume());
+           System.out.println("Area "+c.area());
+          
+       }
+    
+}
+
+// ----- Multilevel-----
+class Animal{  
+void eat(){System.out.println("eating ");}  
+}  
+class Dog extends Animal{  
+void bark(){System.out.println("barking ");}  
+}  
+class BabyDog extends Dog{  
+void weep(){System.out.println("weeping ");}  
+}  
+class TestInheritance2{  
+public static void main(String args[]){  
+BabyDog d=new BabyDog();  
+d.weep();  
+d.bark();  
+d.eat();  
+}}  

@@ -1,0 +1,88 @@
+// Question 1
+class ATCS {
+    
+    public static void main(String[] args) {
+
+        Integer i = new Integer(117);
+        
+        int i1 = i;
+        
+        System.out.println("Value of i:" + i);
+        System.out.println("Value of i1: " + i1);
+        
+        Character ch = 'a';
+        
+        char ch2 = ch;
+        
+        System.out.println("Value of ch: " + ch);
+        System.out.println(" Value of gfg: " + ch2);
+
+        }
+}
+
+// Question 2
+
+class ATCS {
+
+    public static void main(String[] args) {
+
+        byte b=1;
+        short s=2;
+        int i=3;
+        long l=4;
+        char c='a';
+        boolean bo=true;
+        float f=5.0F;
+        double d=6.0;
+        
+        Byte byteW=b;
+        Short shortW=s;
+        Integer integerW=i;
+        Long longW=l;
+        Character charW=c;
+        Boolean boolW=bo;
+        Float floatW=f;
+        Double doubleW=d;
+        
+        System.out.println("---Printing object values---");
+        System.out.println("Byte : "+byteW);
+        System.out.println("Short : "+shortW);
+        System.out.println("Integer : "+integerW);
+        System.out.println("Long : "+longW);
+        System.out.println("Float : "+floatW);
+        System.out.println("Double : "+doubleW);
+        System.out.println("Character : "+charW);
+        System.out.println("Boolean : "+boolW);
+    }
+}
+
+// Question 3
+import java.util.Arrays;
+
+
+class ATCS {
+
+    public static void main(String[] args) {
+
+        int arr[]= {12,15,3,6,76,45,89,69,117};
+        Arrays.sort(arr);
+        System.out.println("Sorted array:"+Arrays.toString(arr));
+    }
+}
+
+// Question 4
+
+class ATCS {
+
+    ATCS() {
+        this("Satya");
+        System.out.println("non-param constructor");
+    }
+    ATCS(String s) {
+        System.out.println("param constructor");
+    }
+    public static void main(String[] args) {
+
+        ATCS chaining  = new ATCS();
+    }
+}
