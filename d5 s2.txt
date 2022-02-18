@@ -1,0 +1,208 @@
+// Session 1 
+
+// Question 1
+
+class Student
+{
+    public int roll;
+    public String name;
+    public String course;
+    public int m1,m2,m3;
+    
+    public int total()
+    {
+        return m1+m2+m3;
+    }
+    public float average()
+    {
+        return (float)total()/3;
+    }
+    public char grade()
+    {
+        if(average()>=60)
+            return 'A';
+        else
+            return 'B';
+    }
+    public String toString()
+    {
+        return "Roll No:"+roll+"\n"+"Name:"+name+"\n"+"Course:"+course+"\n";
+    }
+}
+
+public class StudentTest 
+{
+
+    public static void main(String[] args) 
+    {
+        Student s=new Student();
+        
+        s.roll=1;
+        s.name="John";
+        s.course="CS";
+        s.m1=70;
+        s.m2=80;
+        s.m3=65;
+        
+        System.out.println("Total :"+s.total());
+        System.out.println("Average :"+s.average());
+        
+        System.out.println("Details:\n "+ s );
+        
+    }
+    
+}
+
+// Question 3
+
+/*
+class Student {
+   private String name; 
+   private double average; 
+
+   
+   public Student(String name, double average) {
+      this.name = name;
+
+      
+      if (average > 0.0) {
+         if (average <= 100.0) {
+            this.average = average; // assign to instance variable
+         }
+      }
+   }
+
+   
+   public void setName(String name) {
+      this.name = name; 
+   }
+
+   
+   public String getName() {
+      return name;
+   }
+
+   
+   public void setAverage(double average) {
+       
+      if (average > 0.0) {
+         if (average <= 100.0) {
+            this.average = average; 
+         }
+      }
+   }
+
+   
+   public double getAverage() {
+      return average;
+   }
+
+  
+   public String getLetterGrade() {
+      String letterGrade = ""; 
+
+      if (average >= 90.0) {
+         letterGrade = "A";
+      }
+      else if (average >= 80.0) {
+         letterGrade = "B";
+      }
+      else if (average >= 70.0) {
+         letterGrade = "C";
+      }
+      else if (average >= 60.0) {
+         letterGrade = "D";
+      }
+      else {
+         letterGrade = "F";
+      }
+
+      return letterGrade;
+   }
+} 
+.
+public class Main {
+   public static void main(String[] args) {
+      Student account1 = new Student("John Doe", 58.9);
+      Student account2 = new Student("John Doe2", 75.67); 
+
+      System.out.printf("%s's letter grade is: %s%n", 
+         account1.getName(), account1.getLetterGrade());      
+      System.out.printf("%s's letter grade is: %s%n", 
+         account2.getName(), account2.getLetterGrade());      
+   } 
+}
+
+*/
+
+// Question 4
+/*
+ class Calculator {
+	static void calculatorFun(int a,int b) {
+	System.out.println(a+b);
+	System.out.println(a-b);
+	System.out.println(a*b);
+	System.out.println(a/b);
+		
+	}
+
+	public static void main(String[] args) {
+		
+		Calculator.calculatorFun(11,7);
+		}
+	}
+*/
+
+// QUestion 6
+public class StringPractice1 {
+
+    public static void main(String[] args) {
+        
+        String str=new String("Satya Sir");
+        
+        /*
+        //System.out.println(str.length());
+        int len=str.length();
+        System.out.println(len);*/
+        
+        
+        /*String str2=str.toUpperCase();
+        System.out.println(str2);*/
+        
+        
+        /*str=str.trim();
+        System.out.println(str);*/
+        
+        /*String str2=str.substring(3);
+        System.out.println(str2);*/
+        
+        String str2=str.replace('S', 'M');
+        //System.out.println(str2);
+        
+        System.out.println(str2+ " " +str);
+
+	  /*
+        String str1="Mr. Satya Sir";
+        System.out.println(str1.startsWith("Mr."));
+        System.out.println(str1.startsWith("Satya" , 4));
+        System.out.println(str1.endsWith("Sir"));
+        System.out.println(str1.charAt(4));
+        
+    }
+    
+}
+
+// Question 7
+class ATCS {
+
+    public static void main(String[] args) {
+
+       int number1 = 117;
+       Integer Inumber1 = number1;
+       
+       int number2 = 118;
+       Integer Inumber2 = number2;
+
+        System.out.println("Add is "+(Inumber1 + Inumber2));
+    }
+}

@@ -1,0 +1,91 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+class ATCS {
+
+    public static void main(String[] args) {
+
+       // Session 1
+
+        //Question 1
+        /*
+        int arr[] = {1, 2, 3, 4, 5};
+        int arrLength = arr.length;
+        System.out.println("Elements of given array: ");
+        for (int i = 0; i < arrLength; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        */
+
+        //Question 2
+        /*
+        int array[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 };
+        int length = array.length;
+        int sum = 0;
+
+
+        for (int i = 0; i < length; i++) {
+            sum += array[i];
+        }
+        double average = sum / length;
+
+        System.out.println("Average of array : "+average);
+         */
+
+        //Question 3
+        /*
+        int numbers[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 };
+
+        for (int number: numbers) {
+            System.out.println(number);
+
+        }
+         */
+
+        //Question 4
+        /*
+        char[] arr = { 'S', 'A', 'T', 'Y', 'A' };
+        String str = String.valueOf(arr);
+        System.out.println(str);
+         */
+
+        //Question 5
+        /*
+        int rows = 2, columns = 4;
+
+        int[][] MatrixA = { {1, 2, 3, 4}, {5, 6, 7, 8} };
+        int[][] MatrixB = { {9, 10, 11, 12}, {13, 14, 15, 16} };
+
+        int[][] sum = new int[rows][columns];
+        for(int i = 0; i < rows; i++) {
+            for (int j = 0; j < columns; j++) {
+                sum[i][j] = MatrixA[i][j] + MatrixB[i][j];
+            }
+        }
+        System.out.println("Sum of the given matrices : ");
+        for(int i = 0; i < rows; i++) {
+            for (int j = 0; j < columns; j++) {
+                System.out.print(sum[i][j] + "    ");
+            }
+            System.out.println();
+
+        }
+         */
+
+        //Question 6
+        /*
+        char[] arr = { 'S', 'A', 'T', 'Y', 'A' };
+        System.out.println(arr.getClass().getSimpleName())
+        ;
+         */
+
+        //Question 7
+        /*
+        int numbers[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 };
+        Arrays.sort(numbers);
+        System.out.println("Minimum = " + numbers[0]);
+        System.out.println("Maximum = " + numbers[numbers.length-1])
+        ;
+         */
+    }
+}
