@@ -1,0 +1,113 @@
+import java.util.Scanner;
+
+class ATCS {
+
+    public static void main(String[] args) {
+
+        // Session 2
+
+        // Ques 1
+       /*
+        int i;
+        int j;
+        int n;
+        int count=0;
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter n : ");
+        n = sc.nextInt();
+
+        System.out.println("prime number between 1 to n\n");
+
+        for(i=2;i<=n;i++)
+        {
+            for(j=1;j<=i;j++)
+            {
+                if(i%j==0)
+                    count++;
+            }
+            if(count==2)
+                System.out.print(" "+i);
+            count=0;
+        }
+        */
+
+        // Question 2
+        /*
+        int num ;
+        int reversedNum = 0;
+        int remainder = 0;
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Number : ");
+        num = sc.nextInt();
+        int originalNum = num;
+
+        while (num != 0) {
+            remainder = num % 10;
+            reversedNum = reversedNum * 10 + remainder;
+            num /= 10;
+        }
+
+        if (originalNum == reversedNum) {
+            System.out.println(originalNum + " is Palindrome.");
+        }
+        else {
+            System.out.println(originalNum + " is not Palindrome.");
+        }
+         */
+
+        // Question 4
+        /*
+        float x;
+
+        System.out.println("Enter Number : ");
+        Scanner sc = new Scanner(System.in);
+        x = sc.nextFloat();
+
+        float p = 1;
+
+        while(p*p <= x) {
+            p++;
+        }
+        System.out.println("Square root is " + (p-1));
+         */
+
+        // Question 5
+        /*
+        int marks[] = new int[6];
+        int i;
+        float total=0, avg;
+        Scanner scanner = new Scanner(System.in);
+
+
+        for(i=0; i<6; i++) {
+            System.out.print("Enter Marks of Subject "+(i+1)+": ");
+            marks[i] = scanner.nextInt();
+            total = total + marks[i];
+        }
+
+
+        avg = total/6;
+        System.out.print("The student Grade is: ");
+        if(avg>=80)
+        {
+            System.out.print("A");
+        }
+        else if(avg>=60 && avg<80)
+        {
+            System.out.print("B");
+        }
+        else if(avg>=40 && avg<60)
+        {
+            System.out.print("C");
+        }
+        else
+        {
+            System.out.print("D");
+        }
+         */
+
+        
+    }
+}
